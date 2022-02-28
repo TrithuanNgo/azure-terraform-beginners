@@ -7,7 +7,7 @@
 
 variable "resource_group" {
   description = "The name of your Azure Resource Group."
-  default     = "Terraform-Azure-Beginners"
+  default     = "Leex3"
 }
 
 variable "prefix" {
@@ -17,12 +17,12 @@ variable "prefix" {
 
 variable "hostname" {
   description = "Virtual machine hostname. Used for local hostname, DNS, and storage-related names."
-  default     = "catapp"
+  default     = "vmLeex"
 }
 
 variable "location" {
   description = "The region where the virtual network is created."
-  default     = "centralus"
+  default     = "eastus"
 }
 
 variable "virtual_network_name" {
@@ -52,22 +52,22 @@ variable "storage_replication_type" {
 
 variable "vm_size" {
   description = "Specifies the size of the virtual machine."
-  default     = "Standard_A0"
+  default     = "Standard_B2s"
 }
 
 variable "image_publisher" {
   description = "Name of the publisher of the image (az vm image list)"
-  default     = "Canonical"
+  default     = "Debian"
 }
 
 variable "image_offer" {
   description = "Name of the offer (az vm image list)"
-  default     = "UbuntuServer"
+  default     = "debian-10"
 }
 
 variable "image_sku" {
   description = "Image SKU to apply (az vm image list)"
-  default     = "16.04-LTS"
+  default     = "10"
 }
 
 variable "image_version" {
